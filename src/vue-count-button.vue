@@ -55,11 +55,11 @@ export default {
     },
 
     created: function() {
-        this.$on('reset', this.onReset);
+        this.$on('counter-reset', this.onReset);
     },
 
     beforeDestroy: function() {
-        this.$off('reset', this.onReset);
+        this.$off('counter-reset', this.onReset);
     },
 
     methods: {
