@@ -54,6 +54,11 @@ new Vue({
     el: 'body',
     components: {
         'vue-count-button': VueCountButton
+    },
+    methods: {
+        onChange: function(e){
+            console.log(e); //e is current counter value
+        }
     }
 });
 ```
