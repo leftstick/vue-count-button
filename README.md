@@ -43,7 +43,7 @@ var VueCountButton = require('vue-count-button');
 </script>
 ```
 
-## Usage ##
+## Basic Usage ##
 
 ```html
 <vue-count-button v-on:counter-updated="onChange"></vue-count-button>
