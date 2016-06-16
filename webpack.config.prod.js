@@ -21,7 +21,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.vue$/,
-                loader: 'babel?{"presets":["es2015"]}!vue',
+                loader: 'vue',
                 exclude: /node_modules/
             }
         ]

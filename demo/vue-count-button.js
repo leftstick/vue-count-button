@@ -54,34 +54,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(1);
-	__vue_script__ = __webpack_require__(5);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/vue-count-button.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(6);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(1)
+	__vue_script__ = __webpack_require__(5)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/vue-count-button.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(6)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), true);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/haozuo/codes/github/vue-count-button/src/vue-count-button.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./vue-count-button.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 1 */
@@ -118,7 +114,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.round-button[_v-15ab9480] {\n    position: relative;\n    outline: 0;\n    cursor: pointer;\n    display: block;\n    border: 6px solid #f5f5f5;\n    border-radius: 50%;\n    color: #f5f5f5;\n    text-align: center;\n    text-decoration: none;\n    box-shadow: 0 0 3px gray;\n    font-size: 12px;\n    font-weight: bold;\n    -webkit-transition: all 0.1s ease 0s;\n    transition: all 0.1s ease 0s;\n}\n\n.round-button[_v-15ab9480]:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    background: #BDBDBD;\n    border-radius: 50%;\n    opacity: 0;\n    -webkit-transition: all 0.3s ease 0s;\n    transition: all 0.3s ease 0s;\n}\n\n.round-button[_v-15ab9480]:active:after {\n    opacity: 1;\n    -webkit-transition: 0s;\n    transition: 0s;\n}\n\n.round-button[_v-15ab9480]:hover {\n    border: 4px solid #f5f5f5;\n}\n\n.hint[_v-15ab9480] {\n    position: absolute;\n    right: -25px;\n    top: 0;\n    color: #000;\n    opacity: 1;\n    -webkit-transition: all 0.4s ease 0s;\n    transition: all 0.4s ease 0s;\n}\n\n.hint.move[_v-15ab9480] {\n    opacity: 0;\n    top: -100%;\n}\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.round-button[_v-15ab9480] {\n    position: relative;\n    outline: 0;\n    cursor: pointer;\n    display: block;\n    border: 6px solid #f5f5f5;\n    border-radius: 50%;\n    color: #f5f5f5;\n    text-align: center;\n    text-decoration: none;\n    box-shadow: 0 0 3px gray;\n    font-size: 12px;\n    font-weight: bold;\n    -webkit-transition: all 0.1s ease 0s;\n    transition: all 0.1s ease 0s;\n}\n\n.round-button[_v-15ab9480]:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    background: #BDBDBD;\n    border-radius: 50%;\n    opacity: 0;\n    -webkit-transition: all 0.3s ease 0s;\n    transition: all 0.3s ease 0s;\n}\n\n.round-button[_v-15ab9480]:active:after {\n    opacity: 1;\n    -webkit-transition: 0s;\n    transition: 0s;\n}\n\n.round-button[_v-15ab9480]:hover {\n    border: 4px solid #f5f5f5;\n}\n\n.hint[_v-15ab9480] {\n    position: absolute;\n    right: -25px;\n    top: 0;\n    color: #000;\n    opacity: 1;\n    -webkit-transition: all 0.4s ease 0s;\n    transition: all 0.4s ease 0s;\n}\n\n.hint.move[_v-15ab9480] {\n    opacity: 0;\n    top: -100%;\n}\n", ""]);
 
 	// exports
 

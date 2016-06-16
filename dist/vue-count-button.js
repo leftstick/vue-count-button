@@ -11,41 +11,41 @@
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-
+/******/
 /******/ 		// Check if module is in cache
 /******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
-
+/******/
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
-
+/******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-
-
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-
+/******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-
+/******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-
+/******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
@@ -54,24 +54,23 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(1);
-	__vue_script__ = __webpack_require__(5);
-	__vue_template__ = __webpack_require__(6);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(1)
+	__vue_script__ = __webpack_require__(5)
+	__vue_template__ = __webpack_require__(6)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
+
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
-
+	
 	// load the styles
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
@@ -98,11 +97,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports = module.exports = __webpack_require__(3)();
 	// imports
-
-
+	
+	
 	// module
 	exports.push([module.id, ".round-button[_v-15ab9480]{position:relative;outline:0;cursor:pointer;display:block;border:6px solid #f5f5f5;border-radius:50%;color:#f5f5f5;text-align:center;text-decoration:none;box-shadow:0 0 3px gray;font-size:12px;font-weight:700;-webkit-transition:all .1s ease 0s;transition:all .1s ease 0s}.round-button[_v-15ab9480]:after{content:\"\";display:block;position:absolute;width:100%;height:100%;top:0;left:0;background:#bdbdbd;border-radius:50%;opacity:0;-webkit-transition:all .3s ease 0s;transition:all .3s ease 0s}.round-button[_v-15ab9480]:active:after{opacity:1;-webkit-transition:0s;transition:0s}.round-button[_v-15ab9480]:hover{border:4px solid #f5f5f5}.hint[_v-15ab9480]{position:absolute;right:-25px;top:0;color:#000;opacity:1;-webkit-transition:all .4s ease 0s;transition:all .4s ease 0s}.hint.move[_v-15ab9480]{opacity:0;top:-100%}", ""]);
-
+	
 	// exports
 
 
@@ -117,7 +116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// css base code, injected by the css-loader
 	module.exports = function() {
 		var list = [];
-
+	
 		// return the list of modules as css string
 		list.toString = function toString() {
 			var result = [];
@@ -131,7 +130,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 			return result.join("");
 		};
-
+	
 		// import a list of modules into the list
 		list.i = function(modules, mediaQuery) {
 			if(typeof modules === "string")
@@ -187,23 +186,23 @@ return /******/ (function(modules) { // webpackBootstrap
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [];
-
+	
 	module.exports = function(list, options) {
 		if(false) {
 			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
 		}
-
+	
 		options = options || {};
 		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
 		// tags it will allow on a page
 		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-
+	
 		// By default, add <style> tags to the bottom of <head>.
 		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-
+	
 		var styles = listToStyles(list);
 		addStylesToDom(styles, options);
-
+	
 		return function update(newList) {
 			var mayRemove = [];
 			for(var i = 0; i < styles.length; i++) {
@@ -226,7 +225,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		};
 	}
-
+	
 	function addStylesToDom(styles, options) {
 		for(var i = 0; i < styles.length; i++) {
 			var item = styles[i];
@@ -248,7 +247,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	}
-
+	
 	function listToStyles(list) {
 		var styles = [];
 		var newStyles = {};
@@ -266,7 +265,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 		return styles;
 	}
-
+	
 	function insertStyleElement(options, styleElement) {
 		var head = getHeadElement();
 		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
@@ -285,7 +284,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
 		}
 	}
-
+	
 	function removeStyleElement(styleElement) {
 		styleElement.parentNode.removeChild(styleElement);
 		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
@@ -293,17 +292,17 @@ return /******/ (function(modules) { // webpackBootstrap
 			styleElementsInsertedAtTop.splice(idx, 1);
 		}
 	}
-
+	
 	function createStyleElement(options) {
 		var styleElement = document.createElement("style");
 		styleElement.type = "text/css";
 		insertStyleElement(options, styleElement);
 		return styleElement;
 	}
-
+	
 	function addStyle(obj, options) {
 		var styleElement, update, remove;
-
+	
 		if (options.singleton) {
 			var styleIndex = singletonCounter++;
 			styleElement = singletonElement || (singletonElement = createStyleElement(options));
@@ -316,9 +315,9 @@ return /******/ (function(modules) { // webpackBootstrap
 				removeStyleElement(styleElement);
 			};
 		}
-
+	
 		update(obj);
-
+	
 		return function updateStyle(newObj) {
 			if(newObj) {
 				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
@@ -329,19 +328,19 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		};
 	}
-
+	
 	var replaceText = (function () {
 		var textStore = [];
-
+	
 		return function (index, replacement) {
 			textStore[index] = replacement;
 			return textStore.filter(Boolean).join('\n');
 		};
 	})();
-
+	
 	function applyToSingletonTag(styleElement, index, remove, obj) {
 		var css = remove ? "" : obj.css;
-
+	
 		if (styleElement.styleSheet) {
 			styleElement.styleSheet.cssText = replaceText(index, css);
 		} else {
@@ -355,16 +354,16 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	}
-
+	
 	function applyToTag(styleElement, obj) {
 		var css = obj.css;
 		var media = obj.media;
 		var sourceMap = obj.sourceMap;
-
+	
 		if (media) {
 			styleElement.setAttribute("media", media);
 		}
-
+	
 		if (sourceMap) {
 			// https://developer.chrome.com/devtools/docs/javascript-debugging
 			// this makes source maps inside style tags work properly in Chrome
@@ -372,7 +371,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			// http://stackoverflow.com/a/26603875
 			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
 		}
-
+	
 		if (styleElement.styleSheet) {
 			styleElement.styleSheet.cssText = css;
 		} else {
@@ -389,15 +388,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	exports.default = {
-
+	
 	    data: function data() {
 	        var _this = this;
-
+	
 	        return {
 	            value: this.init,
 	            hints: [],
@@ -406,7 +405,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        };
 	    },
-
+	
 	    props: {
 	        init: {
 	            type: Number,
@@ -426,7 +425,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            default: '#464646'
 	        }
 	    },
-
+	
 	    computed: {
 	        btnStyle: function btnStyle() {
 	            return {
@@ -437,19 +436,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	            };
 	        }
 	    },
-
+	
 	    created: function created() {
 	        this.$on('counter-reset', this.onReset);
 	    },
-
+	
 	    beforeDestroy: function beforeDestroy() {
 	        this.$off('counter-reset', this.onReset);
 	    },
-
+	
 	    methods: {
 	        counting: function counting(e) {
 	            var _this2 = this;
-
+	
 	            var hint = { txt: '+1', cls: '' };
 	            this.hints.push(hint);
 	            setTimeout(function () {
@@ -461,12 +460,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	            this.value++;
 	            this.$emit('counter-updated', this.value);
 	        },
-
-
+	
+	
 	        entering: function entering(e) {
 	            e.target.style['line-height'] = this.width - 8 + 'px';
 	        },
-
+	
 	        leaving: function leaving(e) {
 	            e.target.style['line-height'] = this.width - 12 + 'px';
 	        }
